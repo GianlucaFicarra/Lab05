@@ -1,0 +1,48 @@
+-Cosa rappresenta il "livello" nel mio algoritmo ricorsivo?
+ La posizione dove voglio collocare la lettera corrente
+
+-Com'è fatta una soluzione parziale?
+ una prima combinazione di alcune delle lettere che compongono la parola passata (eta--> et ta ae ecc...)
+
+-Come faccio a riconoscere se una soluzione parziale è anche completa?
+ parola parziale è anche completa se la sua dimensione è uguale ala dimensione della parola passata
+
+-Data una soluzione parziale, come faccio a sapere se è valida o se non è valida?
+ non ha senso perchè la parziale non è ancora una parola
+ 
+-Data una soluzione completa, come faccio a sapere se è valida o se non è valida?
+ soluzione completa non valida se non trovata nel database
+ 
+-Qual è la regola per generare tutte le soluzioni del livello+1 a partire da una soluzione parziale del livello corrente?
+ aggiungere una delle lettere restanti
+
+-Qual è la struttura dati per memorizzare una soluzione (parziale o completa)?
+ string con accesso posizionale oppure arraylink
+ 
+-Qual è la struttura dati per memorizzare lo stato della ricerca (della ricorsione)?
+ un contatore che mi dica il numero di lettere
+ 
+-Struttura a blocchi:
+
+void recursive( ){
+
+E- istruzioni
+
+A-cond terminazione
+if(string.lenght==passata.lenght){
+   fai qualcosa
+}
+
+B-generazione di nuova soluzione
+aggiunta di una nuova lettera della parola passata a quelle già salvate nella struttura dati
+
+C.filtro della ricorsione
+if(filtro: scorro){
+}
+
+
+
+
+
+
+}
